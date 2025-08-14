@@ -1,62 +1,82 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio de Eduardo Aguilar" />
+    <meta name="description" content="Portafolio de Eduardo Aguilar, Científico de Datos y Machine Learning Engineer." />
     <title>Eduardo Aguilar | Portfolio</title>
-    <link rel="icon" href="/assets/favicon-DiPrTILp.ico" />
-    <!-- Tailwind CSS -->
-    <link rel="stylesheet" href="/src/style.css" />
+    <!-- Script de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Soporte básico para modo oscuro
+      tailwind.config = {
+        darkMode: 'media', // o 'class'
+      }
+    </script>
   </head>
-  <body class="bg-gray-50 text-gray-900 min-h-screen">
-    <header class="bg-[#333] w-full">
-        <nav>
-            <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+  <body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans">
+
+    <!-- Barra de Navegación -->
+    <header class="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-50">
+      <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="#inicio" class="text-xl font-bold text-blue-600 dark:text-blue-400">Eduardo Aguilar</a>
+        <ul class="flex space-x-6">
+          <li><a href="#sobre-mi" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Sobre Mí</a></li>
+          <li><a href="#proyectos" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Proyectos</a></li>
+          <li><a href="#contacto" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
+
+    <main>
+      <!-- Sección de Inicio (Hero) -->
+      <section id="inicio" class="min-h-screen flex items-center justify-center text-center bg-gray-100 dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+          <h1 class="text-5xl md:text-7xl font-extrabold text-gray-900 dark:text-white">¡Hola! Soy Eduardo Aguilar</h1>
+          <h2 class="text-2xl md:text-3xl mt-4 font-semibold text-blue-600 dark:text-blue-400">Científico de Datos & Machine Learning Engineer</h2>
+          <p class="mt-6 max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-300">
+            Apasionado por transformar datos en soluciones inteligentes que resuelven problemas del mundo real.
+          </p>
+          <a href="#proyectos" class="mt-8 inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition-transform transform hover:scale-105">
+            Ver mis Proyectos
+          </a>
+        </div>
+      </section>
+
+      <!-- Sección Sobre Mí -->
+      <section id="sobre-mi" class="py-20">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+          <h2 class="text-4xl font-bold mb-4 text-gray-900 dark:text-white">Sobre Mí</h2>
+          <p class="text-lg leading-relaxed text-gray-600 dark:text-gray-300">
+            Soy un profesional orientado a resultados con experiencia en el análisis de datos, modelado predictivo y desarrollo de algoritmos de machine learning. Mi objetivo es aplicar mis habilidades para generar un impacto positivo y tangible. Disfruto aprendiendo continuamente sobre nuevas tecnologías y metodologías en el fascinante campo de la ciencia de datos.
+          </p>
+        </div>
+      </section>
+
+      <!-- Sección Proyectos -->
+      <section id="proyectos" class="py-20 bg-gray-100 dark:bg-gray-800">
+        <div class="container mx-auto px-6 text-center">
+          <h2 class="text-4xl font-bold mb-12 text-gray-900 dark:text-white">Mis Proyectos</h2>
+          <p class="text-xl text-gray-500 dark:text-gray-400">Aquí se mostrarán mis proyectos próximamente. ¡Vuelve pronto!</p>
+          <!-- Aquí puedes agregar tarjetas para cada proyecto -->
+        </div>
+      </section>
+
+      <!-- Sección Contacto -->
+      <section id="contacto" class="py-20">
+        <div class="container mx-auto px-6 max-w-3xl text-center">
+          <h2 class="text-4xl font-bold mb-4 text-gray-900 dark:text-white">Ponte en Contacto</h2>
+          <p class="text-lg mb-8 text-gray-600 dark:text-gray-300">¿Tienes alguna pregunta o quieres colaborar en un proyecto? ¡No dudes en escribirme!</p>
+          <a href="mailto:tu-email@ejemplo.com" class="text-xl font-semibold text-blue-600 dark:text-blue-400 hover:underline">
+            tu-email@ejemplo.com
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 dark:bg-black text-white text-center py-6">
+      <p>&copy; 2024 Eduardo Aguilar. Todos los derechos reservados.</p>
+    </footer>
+
   </body>
 </html>
-
-
-<style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #111;
-}
-
-header, nav {
-  background-color: #333;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-body {
-  margin: 0;
-}
-</style>
-
-
