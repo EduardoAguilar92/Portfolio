@@ -1,8 +1,15 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
+=======
+<!doctype html>
+<html lang="en">
+>>>>>>> e85e4e011ff92842b379deeb766681e19ab3cde7
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<<<<<<< HEAD
     <meta name="description" content="Portafolio de Eduardo Aguilar, Científico de Datos y Machine Learning Engineer." />
     <title>Eduardo Aguilar | Portfolio</title>
     <!-- Script de Tailwind CSS -->
@@ -13,6 +20,26 @@
         darkMode: 'media', // o 'class'
       }
     </script>
+    <style>
+      /* Habilita el "scroll snapping" para un desplazamiento por secciones */
+      html {
+        scroll-snap-type: y mandatory;
+      }
+      section {
+        scroll-snap-align: start;
+      }
+    </style>
+    <style>
+      /* Habilita el "scroll snapping" para un desplazamiento por secciones */
+      html {
+        scroll-snap-type: y mandatory;
+      }
+      section {
+        scroll-snap-align: start;
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-BQoyxsyi.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-ANkKtPyG.css">
   </head>
   <body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans">
 
@@ -44,26 +71,263 @@
       </section>
 
       <!-- Sección Sobre Mí -->
-      <section id="sobre-mi" class="py-20">
+      <section id="sobre-mi" class="min-h-screen flex items-center py-20">
         <div class="container mx-auto px-6 max-w-4xl text-center">
-          <h2 class="text-4xl font-bold mb-4 text-gray-900 dark:text-white">Sobre Mí</h2>
-          <p class="text-lg leading-relaxed text-gray-600 dark:text-gray-300">
+          <h2 class="text-4xl font-bold mb-8 text-gray-900 dark:text-white">Sobre Mí</h2>
+          <img src="/assets/profile-DO5lm2VM.jpg" alt="Foto de perfil de Eduardo Aguilar" class="w-40 h-40 rounded-full mx-auto mb-8 shadow-lg object-cover">
+          <p class="text-lg leading-relaxed text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             Soy un profesional orientado a resultados con experiencia en el análisis de datos, modelado predictivo y desarrollo de algoritmos de machine learning. Mi objetivo es aplicar mis habilidades para generar un impacto positivo y tangible. Disfruto aprendiendo continuamente sobre nuevas tecnologías y metodologías en el fascinante campo de la ciencia de datos.
           </p>
         </div>
       </section>
 
       <!-- Sección Proyectos -->
-      <section id="proyectos" class="py-20 bg-gray-100 dark:bg-gray-800">
-        <div class="container mx-auto px-6 text-center">
+      <section id="proyectos" class="min-h-screen flex items-center py-20 bg-gray-100 dark:bg-gray-800">
+        <div class="container mx-auto px-6">
           <h2 class="text-4xl font-bold mb-12 text-gray-900 dark:text-white">Mis Proyectos</h2>
-          <p class="text-xl text-gray-500 dark:text-gray-400">Aquí se mostrarán mis proyectos próximamente. ¡Vuelve pronto!</p>
-          <!-- Aquí puedes agregar tarjetas para cada proyecto -->
+          
+          <!-- Grid de Proyectos -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+            <!-- Tarjeta de Proyecto 1 -->
+            <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+              <img src="https://via.placeholder.com/600x400.png/007bff/ffffff?text=Proyecto+1" alt="Imagen del Proyecto 1" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Segmentación semántica de ultrasonografías de mama</h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                  Estudio comparativo basado en cómputo neuronal entre los enfoques convencional y convolucional para obtener un método de segmentación semántica de ultrasonografías de mama.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-blue-200 dark:text-blue-900">MatLab</span>
+                  <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-purple-200 dark:text-purple-900">Redes Neuronales</span>
+                  <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-green-200 dark:text-green-900">Deep Learning</span>
+                  <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-red-200 dark:text-red-900">Segmentación</span>
+                </div>
+                <div class="mt-6 flex justify-end gap-4">
+                  <!-- <a href="#" class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">Ver Código</a> -->
+                  <!-- <a href="#" class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">Demo</a> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta de Proyecto 2 -->
+            <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+              <img src="https://via.placeholder.com/600x400.png/28a745/ffffff?text=Proyecto+2" alt="Imagen del Proyecto 2" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Detección de anomalidades en huesos largos</h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                  Implementación de un servicio de detección asistido por computadora (CAD) basado en técnicas de aprendizaje profundo, a partir de un estudio comparativo entre distintas arquitecturas, para la detección de anomalidades en huesos largos.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-blue-200 dark:text-blue-900">Python</span>
+                  <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-red-200 dark:text-red-900">TensorFlow</span>
+                  <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-green-200 dark:text-green-900">Keras</span>
+                </div>
+                <div class="mt-6 flex justify-end gap-4">
+                  <!-- <a href="#" class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">Ver Código</a> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta de Proyecto de Maestría -->
+            <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+              <img src="https://via.placeholder.com/600x400.png/ffc107/ffffff?text=Proyecto+Maestría" alt="Imagen del Proyecto de Maestría" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Segmentación de Clientes</h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                  Una breve descripción del problema que resolviste, la metodología que usaste y los resultados clave que obtuviste.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-yellow-200 dark:text-yellow-900">Investigación</span>
+                  <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-blue-200 dark:text-blue-900">Python</span>
+                  <!-- Agrega más tecnologías aquí -->
+                </div>
+                <div class="mt-6 flex justify-end gap-4">
+                  <a href="#" class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">Ver Tesis</a>
+                  <a href="#" class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">Ver Código</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta de Proyecto 4 -->
+            <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+              <img src="https://via.placeholder.com/600x400.png/28a745/ffffff?text=Proyecto+4" alt="Imagen del Proyecto 4" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Pronóstico de recompra</h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                  Implementación de un servicio de detección asistido por computadora (CAD) basado en técnicas de aprendizaje profundo, a partir de un estudio comparativo entre distintas arquitecturas, para la detección de anomalidades en huesos largos.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-blue-200 dark:text-blue-900">Python</span>
+                  <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-red-200 dark:text-red-900">TensorFlow</span>
+                  <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-green-200 dark:text-green-900">Keras</span>
+                </div>
+                <div class="mt-6 flex justify-end gap-4">
+                  <!-- <a href="#" class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">Ver Código</a> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta de Proyecto 5 -->
+            <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+              <img src="https://via.placeholder.com/600x400.png/28a745/ffffff?text=Proyecto+5" alt="Imagen del Proyecto 5" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Web Scraping de Productos</h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                  Implementación de un servicio de detección asistido por computadora (CAD) basado en técnicas de aprendizaje profundo, a partir de un estudio comparativo entre distintas arquitecturas, para la detección de anomalidades en huesos largos.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-blue-200 dark:text-blue-900">Python</span>
+                  <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-red-200 dark:text-red-900">TensorFlow</span>
+                  <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-green-200 dark:text-green-900">Keras</span>
+                </div>
+                <div class="mt-6 flex justify-end gap-4">
+                  <!-- <a href="#" class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">Ver Código</a> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta de Proyecto 6 -->
+            <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+              <img src="https://via.placeholder.com/600x400.png/28a745/ffffff?text=Proyecto+6" alt="Imagen del Proyecto 6" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Benchmark de Precios</h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                  Implementación de un servicio de detección asistido por computadora (CAD) basado en técnicas de aprendizaje profundo, a partir de un estudio comparativo entre distintas arquitecturas, para la detección de anomalidades en huesos largos.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-blue-200 dark:text-blue-900">Python</span>
+                  <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-red-200 dark:text-red-900">TensorFlow</span>
+                  <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-green-200 dark:text-green-900">Keras</span>
+                </div>
+                <div class="mt-6 flex justify-end gap-4">
+                  <!-- <a href="#" class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">Ver Código</a> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta de Proyecto 7 -->
+            <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+              <img src="https://via.placeholder.com/600x400.png/28a745/ffffff?text=Proyecto+7" alt="Imagen del Proyecto 7" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Modelo de Recomendación</h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                  Implementación de un servicio de detección asistido por computadora (CAD) basado en técnicas de aprendizaje profundo, a partir de un estudio comparativo entre distintas arquitecturas, para la detección de anomalidades en huesos largos.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-blue-200 dark:text-blue-900">Python</span>
+                  <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-red-200 dark:text-red-900">TensorFlow</span>
+                  <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-green-200 dark:text-green-900">Keras</span>
+                </div>
+                <div class="mt-6 flex justify-end gap-4">
+                  <!-- <a href="#" class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">Ver Código</a> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta de Proyecto 8 -->
+            <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+              <img src="https://via.placeholder.com/600x400.png/28a745/ffffff?text=Proyecto+8" alt="Imagen del Proyecto 8" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Generador de cursos con LLM</h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                  Implementación de un generador de cursos utilizando modelos de lenguaje de última generación (LLM) para crear contenido educativo personalizado.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-blue-200 dark:text-blue-900">Python</span>
+                  <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-red-200 dark:text-red-900">TensorFlow</span>
+                  <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-green-200 dark:text-green-900">Keras</span>
+                </div>
+                <div class="mt-6 flex justify-end gap-4">
+                  <!-- <a href="#" class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">Ver Código</a> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta de Proyecto 9 -->
+            <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+              <img src="https://via.placeholder.com/600x400.png/28a745/ffffff?text=Proyecto+9" alt="Imagen del Proyecto 9" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Extracción y validación de campos en un cheque bancario</h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                  Implementación de un sistema de extracción y validación de campos en cheques bancarios utilizando técnicas de procesamiento de imágenes y aprendizaje automático.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-blue-200 dark:text-blue-900">Python</span>
+                  <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-red-200 dark:text-red-900">TensorFlow</span>
+                  <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-green-200 dark:text-green-900">Keras</span>
+                </div>
+                <div class="mt-6 flex justify-end gap-4">
+                  <!-- <a href="#" class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">Ver Código</a> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta de Proyecto 10 -->
+            <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+              <img src="https://via.placeholder.com/600x400.png/28a745/ffffff?text=Proyecto+10" alt="Imagen del Proyecto 10" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Extracción y validación de campos para la precalificación de un crédito hipotecario</h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                  Implementación de un servicio de detección asistido por computadora (CAD) basado en técnicas de aprendizaje profundo, a partir de un estudio comparativo entre distintas arquitecturas, para la detección de anomalidades en huesos largos.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-blue-200 dark:text-blue-900">Python</span>
+                  <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-red-200 dark:text-red-900">TensorFlow</span>
+                  <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-green-200 dark:text-green-900">Keras</span>
+                </div>
+                <div class="mt-6 flex justify-end gap-4">
+                  <!-- <a href="#" class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">Ver Código</a> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta de Proyecto 11 -->
+            <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+              <img src="https://via.placeholder.com/600x400.png/28a745/ffffff?text=Proyecto+11" alt="Imagen del Proyecto 11" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Generador de Aplicaciones Web V1</h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                  Generador de aplicaciones web utilizando frameworks modernos para acelerar el desarrollo y despliegue de proyectos.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-blue-200 dark:text-blue-900">Python</span>
+                  <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-red-200 dark:text-red-900">TensorFlow</span>
+                  <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-green-200 dark:text-green-900">Keras</span>
+                </div>
+                <div class="mt-6 flex justify-end gap-4">
+                  <!-- <a href="#" class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">Ver Código</a> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta de Proyecto 12 -->
+            <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+              <img src="https://via.placeholder.com/600x400.png/28a745/ffffff?text=Proyecto+12" alt="Imagen del Proyecto 12" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Generador de Aplicaciones Web V2</h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                  Generador de aplicaciones web utilizando frameworks modernos para acelerar el desarrollo y despliegue de proyectos.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-blue-200 dark:text-blue-900">Python</span>
+                  <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-red-200 dark:text-red-900">TensorFlow</span>
+                  <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-green-200 dark:text-green-900">Keras</span>
+                </div>
+                <div class="mt-6 flex justify-end gap-4">
+                  <!-- <a href="#" class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">Ver Código</a> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Puedes copiar y pegar la tarjeta para agregar más proyectos -->
+
+          </div>
         </div>
       </section>
 
       <!-- Sección Contacto -->
-      <section id="contacto" class="py-20">
+      <section id="contacto" class="min-h-screen flex items-center py-20">
         <div class="container mx-auto px-6 max-w-3xl text-center">
           <h2 class="text-4xl font-bold mb-4 text-gray-900 dark:text-white">Ponte en Contacto</h2>
           <p class="text-lg mb-8 text-gray-600 dark:text-gray-300">¿Tienes alguna pregunta o quieres colaborar en un proyecto? ¡No dudes en escribirme!</p>
@@ -78,5 +342,11 @@
       <p>&copy; 2024 Eduardo Aguilar. Todos los derechos reservados.</p>
     </footer>
 
+=======
+    <title>Vite + Vue + TS</title>
+  </head>
+  <body>
+    <div id="app"></div>
+>>>>>>> e85e4e011ff92842b379deeb766681e19ab3cde7
   </body>
 </html>
