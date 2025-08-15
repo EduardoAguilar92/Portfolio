@@ -71,9 +71,14 @@
               <img src="/Portfolio/assets/diagramaCADe-dFUBjBLv.png" alt="Imagen del Proyecto 1" class="w-full h-48 object-contain bg-gray-50 dark:bg-gray-600">
               <div class="p-6">
                 <h3 class="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Segmentación semántica de ultrasonografías de mama</h3>
-                <p class="text-gray-600 dark:text-gray-300 mb-4">
-                  Estudio comparativo basado en cómputo neuronal entre los enfoques convencional y convolucional para obtener un método de segmentación semántica de ultrasonografías de mama.
-                </p>
+                <div class="mb-4">
+                  <p id="description-1" class="text-gray-600 dark:text-gray-300 line-clamp-3">
+                    Estudio comparativo basado en cómputo neuronal entre los enfoques convencional y convolucional para obtener un método de segmentación semántica de ultrasonografías de mama.
+                  </p>
+                  <button id="toggle-btn-1" onclick="toggleDescription(1)" class="text-blue-600 dark:text-blue-400 hover:underline text-sm mt-2 hidden">
+                    Ver más
+                  </button>
+                </div>
                 <div class="flex flex-wrap gap-2 mb-4">
                   <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-blue-200 dark:text-blue-900">MatLab</span>
                   <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-purple-200 dark:text-purple-900">Redes Neuronales</span>
@@ -321,3 +326,40 @@
 
   </body>
 </html>
+
+<style>
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+</style>
+
+<script>
+function toggleDescription(projectId) {
+  const description = document.getElementById(`description-${projectId}`);
+  const toggleBtn = document.getElementById(`toggle-btn-${projectId}`);
+  
+  if (description.classList.contains('line-clamp-3')) {
+    description.classList.remove('line-clamp-3');
+    toggleBtn.textContent = 'Ver menos';
+  } else {
+    description.classList.add('line-clamp-3');
+    toggleBtn.textContent = 'Ver más';
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const descriptions = document.querySelectorAll('[id^="description-"]');
+  
+  descriptions.forEach((desc) => {
+    const projectId = desc.id.split('-')[1];
+    const toggleBtn = document.getElementById(`toggle-btn-${projectId}`);
+    
+    if (desc.scrollHeight > desc.clientHeight) {
+      toggleBtn.classList.remove('hidden');
+    }
+  });
+});
+</script>
