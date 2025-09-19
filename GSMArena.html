@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portafolio de Eduardo Aguilar, Científico de Datos y Machine Learning Engineer." />
+    <title>Eduardo Aguilar | Portfolio</title>
+    <!-- Script de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Soporte básico para modo oscuro
+      tailwind.config = {
+        darkMode: 'media', // o 'class'
+      }
+    </script>
+  </head>
+  <body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans">
+
+    <!-- Barra de Navegación -->
+    <header class="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-50">
+      <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+          <a href="index.html#inicio" class="text-xl font-bold text-blue-600 dark:text-blue-400">Eduardo Aguilar</a>
+          <a href="mailto:lalo.aguilar92@gmail.com" class="inline-flex items-center text-xl font-semibold text-blue-600 dark:text-blue-400 hover:underline">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 mr-2">
+              <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+              <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/luis-eduardo-aguilar-camacho-3a8530114/" class="inline-flex items-center text-xl font-semibold text-blue-600 dark:text-blue-400 hover:underline">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 mr-2">
+              <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.25 6.5 1.75 1.75 0 016.5 8.25zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.62 1.62 0 0013 14.19V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+            </svg>
+          </a>
+        </div>
+        <ul class="flex space-x-6">
+          <li><a href="index.html#sobre-mi" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Sobre Mí</a></li>
+          <li><a href="index.html#proyectos" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Proyectos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Sección de Proyecto Detallado -->
+      <section id="proyecto-detalle" class="py-20 bg-gray-50 dark:bg-gray-900">
+          <div class="container mx-auto px-6">
+              <div class="mb-12">
+                  <a href="index.html#proyectos" class="text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                      </svg>
+                      Volver a Proyectos
+                  </a>
+              </div>
+
+              <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-8 text-center">GSMArena Scraper</h1>
+              
+              <div class="grid lg:grid-cols-5 gap-12 items-start">
+                  <!-- Columna de Descripción (ocupa 3 columnas) -->
+                  <div class="lg:col-span-3">
+                      <h2 class="text-3xl font-bold mb-4 text-gray-900 dark:text-white">Descripción</h2>
+                      <p class="text-lg leading-relaxed text-gray-600 dark:text-gray-300">
+                        El proyecto consiste en el desarrollo de un sistema de web scraping especializado en GSMArena, con el propósito de extraer de manera automatizada información detallada sobre dispositivos móviles, incluyendo especificaciones técnicas, precios, fechas de lanzamiento, actualizaciones de software y comparativas entre modelos. La información recolectada se procesa y estructura de forma coherente, garantizando su almacenamiento en una base de datos organizada y fácilmente accesible, lo que permite realizar consultas eficientes y obtener insights precisos.
+                        <br><br>
+                        Este sistema está diseñado para facilitar el análisis de tendencias del mercado de smartphones, permitiendo generar reportes personalizados, comparaciones entre dispositivos, ofreciendo soporte a decisiones estratégicas en ventas, marketing y desarrollo de productos dentro del sector tecnológico.
+                      </p>
+                      
+                      <h3 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-white">Tecnologías Utilizadas</h3>
+                      <div class="flex flex-wrap gap-3">
+                          <span class="bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded-full dark:bg-blue-200 dark:text-blue-900">Python</span>
+                          <span class="bg-red-100 text-red-800 text-sm font-semibold px-3 py-1 rounded-full dark:bg-red-200 dark:text-red-900">Selenium</span>
+                          <span class="bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full dark:bg-green-200 dark:text-green-900">BeautifulSoup</span>
+                      </div>
+
+                      <div class="mt-10">
+                          <a href="https://github.com/EduardoAguilar92/gsmarena-scraper" class="inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-full hover:bg-blue-700 transition-transform transform hover:scale-105">
+                              Ver Código en GitHub
+                          </a>
+                      </div>
+                  </div>
+
+                  <!-- Columna de Video (ocupa 2 columnas) -->
+                  <div class="lg:col-span-2">
+                      <h2 class="text-3xl font-bold mb-4 text-gray-900 dark:text-white">Demo</h2>
+                      <div class="aspect-video w-full bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden shadow-2xl">
+                          <!-- Reemplaza el `src` con el enlace de tu video de YouTube -->
+                          <iframe class="w-full h-full" src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                      </div>
+                      <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">Video de demostración del proyecto.</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 dark:bg-black text-white text-center py-6">
+      <p>&copy; 2025 Eduardo Aguilar. Todos los derechos reservados.</p>
+    </footer>
+
+  </body>
+</html>
+
+<style>
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+</style>
