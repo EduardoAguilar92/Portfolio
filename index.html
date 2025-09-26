@@ -36,7 +36,6 @@
         <ul class="flex space-x-6">
           <li><a href="#sobre-mi" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Sobre Mí</a></li>
           <li><a href="#proyectos" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Proyectos</a></li>
-          <li><a href="GSMArena.html" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Proyectos</a></li>
         </ul>
       </nav>
     </header>
@@ -61,7 +60,7 @@
         <div class="container mx-auto px-6 max-w-4xl text-center">
           <h2 class="text-4xl font-bold mb-8 text-gray-900 dark:text-white">Sobre Mí</h2>
           <img src="./profile.jpg" alt="profile" class="w-40 h-40 rounded-full mx-auto mb-8 shadow-lg object-cover">
-          <p class="text-lg leading-relaxed text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          <p class="text-lg leading-relaxed text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Soy Científico de Datos con experiencia en ciencia de datos e inteligencia artificial, especializado en machine learning, segmentación y web scraping. He desarrollado proyectos que incorporan LLMs para extracción inteligente de datos y modelos de procesamiento de texto en aplicaciones web, combinando análisis avanzado con desarrollo de software. Manejo tecnologías como Azure OpenAI y Document Intelligence, impulsando soluciones que optimizan procesos y generan valor estratégico para las organizaciones.
             <br>
             <br>
@@ -88,17 +87,17 @@
                   <p id="description-1" class="text-gray-600 dark:text-gray-300 line-clamp-3">
                     Se presenta un estudio comparativo entre dos enfoques de cómputo neuronal (tradicional y convolucional)aplicados a la segmentación semántica de ultrasonografías de mama. A partir de esta evaluación, se selecciona el método más adecuado para la segmentación automática de tumores en las imágenes de ultrasonido, con el objetivo de optimizar la detección temprana de anomalías y apoyar el diagnóstico del cáncer de mama.
                   </p>
-                  <button id="toggle-btn-1" onclick="toggleDescription(1)" class="text-blue-600 dark:text-blue-400 hover:underline text-sm mt-2 hidden">
+                  <button id="toggle-btn-1" onclick="openProjectModal(1)" class="text-blue-600 dark:text-blue-400 hover:underline text-sm mt-2 hidden">
                     Ver más
                   </button>
                 </div>
-                <div class="flex flex-wrap gap-2 mb-4">
+                <div class="flex flex-wrap gap-2 mb-4 hidden">
                   <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-blue-200 dark:text-blue-900">MatLab</span>
                   <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-red-200 dark:text-red-900">Redes Neuronales</span>
                   <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-green-200 dark:text-green-900">Deep Learning</span>
                   <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-purple-200 dark:text-purple-900">Segmentación</span>
                 </div>
-                <div class="mt-6 flex justify-end gap-4">
+                <div class="mt-6 flex justify-end gap-4 hidden">
                   <a href="https://repositorio.cinvestav.mx/handle/cinvestav/3171" class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">Ver Tesis</a>
                 </div>
               </div>
@@ -113,18 +112,18 @@
                   <p id="description-2" class="text-gray-600 dark:text-gray-300 line-clamp-3">
                     El proyecto consiste en el desarrollo de un sistema CADe (Computer-Aided Detection) enfocado en la detección automática de regiones sospechosas en imágenes médicas de huesos largos. El sistema empleará técnicas de procesamiento digital de imágenes y algoritmos de inteligencia artificial para asistir al personal médico en la identificación temprana de posibles anomalías, mejorando la precisión diagnóstica y reduciendo tiempos de análisis.
                   </p>
-                  <button id="toggle-btn-2" onclick="toggleDescription(2)" class="text-blue-600 dark:text-blue-400 hover:underline text-sm mt-2 hidden">
+                  <button id="toggle-btn-2" onclick="openProjectModal(2)" class="text-blue-600 dark:text-blue-400 hover:underline text-sm mt-2 hidden">
                     Ver más
                   </button>
                 </div>
-                <div class="flex flex-wrap gap-2 mb-4">
+                <div class="flex flex-wrap gap-2 mb-4 hidden">
                   <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-blue-200 dark:text-blue-900">Python</span>
                   <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-red-200 dark:text-red-900">TensorFlow</span>
                   <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-green-200 dark:text-green-900">Deep Learning</span>
                   <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-purple-200 dark:text-purple-900">Transfer Learning</span>
                   <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-yellow-200 dark:text-yellow-900">Análisis de Imágenes</span>
                 </div>
-                <div class="mt-6 flex justify-end gap-4">
+                <div class="mt-6 flex justify-end gap-4 hidden">
                   <!-- <a href="#" class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">Ver Código</a> -->
                 </div>
               </div>
@@ -145,17 +144,17 @@
                     <br>
                     En última instancia, este sistema contribuye a incrementar la satisfacción del cliente, potenciar la retención y fidelización, y favorecer el crecimiento sostenible del negocio, al transformar los datos en inteligencia competitiva que respalda la innovación y la ventaja en el mercado.
                   </p>
-                  <button id="toggle-btn-3" onclick="toggleDescription(3)" class="text-blue-600 dark:text-blue-400 hover:underline text-sm mt-2 hidden">
+                  <button id="toggle-btn-3" onclick="openProjectModal(3)" class="text-blue-600 dark:text-blue-400 hover:underline text-sm mt-2 hidden">
                     Ver más
                   </button>
                 </div>
-                <div class="flex flex-wrap gap-2 mb-4">
+                <div class="flex flex-wrap gap-2 mb-4 hidden">
                   <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-blue-200 dark:text-blue-900">Python</span>
                   <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-green-200 dark:text-green-900">Scikit-Learn</span>
                   <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-red-200 dark:text-red-900">K-Means</span>
                   <!-- Agrega más tecnologías aquí -->
                 </div>
-                <div class="mt-6 flex justify-end gap-4">
+                <div class="mt-6 flex justify-end gap-4 hidden">
                   <!-- <a href="#" class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">Ver Tesis</a> -->
                   <!-- <a href="#" class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">Ver Código</a> -->
                 </div>
@@ -171,16 +170,16 @@
                   <p id="description-4" class="text-gray-600 dark:text-gray-300 line-clamp-3">
                     A partir del análisis de los ingresos mensuales de los clientes por primera compra y recompra, se evaluaron distintos modelos de predicción con el objetivo de proyectar los ingresos futuros por recompra y proporcionar la proyección y meta del equipo comercial.
                   </p>
-                  <button id="toggle-btn-4" onclick="toggleDescription(4)" class="text-blue-600 dark:text-blue-400 hover:underline text-sm mt-2 hidden">
+                  <button id="toggle-btn-4" onclick="openProjectModal(4)" class="text-blue-600 dark:text-blue-400 hover:underline text-sm mt-2 hidden">
                     Ver más
                   </button>
                 </div>
-                <div class="flex flex-wrap gap-2 mb-4">
+                <div class="flex flex-wrap gap-2 mb-4 hidden">
                   <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-blue-200 dark:text-blue-900">Python</span>
                   <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-red-200 dark:text-red-900">Statsmodels</span>
                   <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-green-200 dark:text-green-900">Forecasting</span>
                 </div>
-                <div class="mt-6 flex justify-end gap-4">
+                <div class="mt-6 flex justify-end gap-4 hidden">
                   <!-- <a href="#" class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">Ver Código</a> -->
                 </div>
               </div>
@@ -198,16 +197,16 @@
                     <br>
                     Este sistema está diseñado para facilitar el análisis de tendencias del mercado de smartphones, permitiendo generar reportes personalizados, comparaciones entre dispositivos, ofreciendo soporte a decisiones estratégicas en ventas, marketing y desarrollo de productos dentro del sector tecnológico.
                   </p>
-                  <button id="toggle-btn-5" onclick="toggleDescription(5)" class="text-blue-600 dark:text-blue-400 hover:underline text-sm mt-2 hidden">
+                  <button id="toggle-btn-5" onclick="openProjectModal(5)" class="text-blue-600 dark:text-blue-400 hover:underline text-sm mt-2 hidden">
                     Ver más
                   </button>
                 </div>
-                <div class="flex flex-wrap gap-2 mb-4">
+                <div class="flex flex-wrap gap-2 mb-4 hidden">
                   <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-blue-200 dark:text-blue-900">Python</span>
                   <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-red-200 dark:text-red-900">Selenium</span>
                   <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-green-200 dark:text-green-900">BeautifulSoup</span>
                 </div>
-                <div class="mt-6 flex justify-end gap-4">
+                <div class="mt-6 flex justify-end gap-4 hidden">
                   <a href="https://github.com/EduardoAguilar92/gsmarena-scraper" class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">Ver Código</a>
                 </div>
               </div>
@@ -228,16 +227,16 @@
                     <br>
                     El sistema está diseñado para integrarse con herramientas de visualización y análisis de datos, proporcionando insights accionables y contribuyendo a mantener una ventaja competitiva en el monitoreo dinámico de precios del sector retail.
                   </p>
-                  <button id="toggle-btn-6" onclick="toggleDescription(6)" class="text-blue-600 dark:text-blue-400 hover:underline text-sm mt-2 hidden">
+                  <button id="toggle-btn-6" onclick="openProjectModal(6)" class="text-blue-600 dark:text-blue-400 hover:underline text-sm mt-2 hidden">
                     Ver más
                   </button>
                 </div>
-                <div class="flex flex-wrap gap-2 mb-4">
+                <div class="flex flex-wrap gap-2 mb-4 hidden">
                   <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-blue-200 dark:text-blue-900">Python</span>
                   <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-red-200 dark:text-red-900">Selenium</span>
                   <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-green-200 dark:text-green-900">BeautifulSoup</span>
                 </div>
-                <div class="mt-6 flex justify-end gap-4">
+                <div class="mt-6 flex justify-end gap-4 hidden">
                   <!-- <a href="#" class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">Ver Código</a> -->
                 </div>
               </div>
@@ -258,16 +257,16 @@
                     <br>
                     Este enfoque permite a los usuarios y empresas del sector tecnológico optimizar la elección de dispositivos, identificar tendencias del mercado y mejorar la experiencia de compra, aprovechando los datos de manera inteligente para ofrecer recomendaciones precisas y relevantes.
                   </p>
-                  <button id="toggle-btn-7" onclick="toggleDescription(7)" class="text-blue-600 dark:text-blue-400 hover:underline text-sm mt-2 hidden">
+                  <button id="toggle-btn-7" onclick="openProjectModal(7)" class="text-blue-600 dark:text-blue-400 hover:underline text-sm mt-2 hidden">
                     Ver más
                   </button>
                 </div>
-                <div class="flex flex-wrap gap-2 mb-4">
+                <div class="flex flex-wrap gap-2 mb-4 hidden">
                   <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-blue-200 dark:text-blue-900">Python</span>
                   <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-red-200 dark:text-red-900">TensorFlow</span>
                   <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-green-200 dark:text-green-900">Keras</span>
                 </div>
-                <div class="mt-6 flex justify-end gap-4">
+                <div class="mt-6 flex justify-end gap-4 hidden">
                   <!-- <a href="#" class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">Ver Código</a> -->
                 </div>
               </div>
@@ -288,17 +287,23 @@
                     <br>
                     La solución está diseñada para adaptarse a distintos niveles de profundidad y puede integrarse en aplicaciones web o plataformas educativas, optimizando el diseño de materiales formativos de manera ágil y escalable.
                   </p>
-                  <button id="toggle-btn-8" onclick="toggleDescription(8)" class="text-blue-600 dark:text-blue-400 hover:underline text-sm mt-2 hidden">
+                  <div id="video-container-8" class="hidden aspect-video w-full bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden shadow-2xl mt-4" data-video-src="./course_generator.mp4">
+                    <video class="w-full h-full" controls>
+                      <source src="./course_generator.mp4" type="video/mp4">
+                      Tu navegador no soporta el tag de video.
+                    </video>
+                  </div>
+                  <button id="toggle-btn-8" onclick="openProjectModal(8)" class="text-blue-600 dark:text-blue-400 hover:underline text-sm mt-2 hidden">
                     Ver más
                   </button>
                 </div>
-                <div class="flex flex-wrap gap-2 mb-4">
+                <div class="flex flex-wrap gap-2 mb-4 hidden">
                   <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-blue-200 dark:text-blue-900">Python</span>
                   <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-red-200 dark:text-red-900">LLMs</span>
                   <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-green-200 dark:text-green-900">Amazon Bedrock</span>
                   <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-yellow-200 dark:text-yellow-900">Docker</span>
                 </div>
-                <div class="mt-6 flex justify-end gap-4">
+                <div class="mt-6 flex justify-end gap-4 hidden">
                   <a href="https://github.com/EduardoAguilar92/course-generator" class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">Ver Código</a>
                 </div>
               </div>
@@ -319,18 +324,18 @@
                     <br>
                     La solución asegura que los datos capturados cumplan con las políticas internas y regulatorias, reduciendo errores manuales y optimizando el flujo de revisión. También genera salidas estructuradas en formatos estándar (ej. JSON) que pueden integrarse fácilmente en sistemas bancarios existentes, mejorando la eficiencia operativa y la trazabilidad de la información.
                   </p>
-                  <button id="toggle-btn-9" onclick="toggleDescription(9)" class="text-blue-600 dark:text-blue-400 hover:underline text-sm mt-2 hidden">
+                  <button id="toggle-btn-9" onclick="openProjectModal(9)" class="text-blue-600 dark:text-blue-400 hover:underline text-sm mt-2 hidden">
                     Ver más
                   </button>
                 </div>
-                <div class="flex flex-wrap gap-2 mb-4">
+                <div class="flex flex-wrap gap-2 mb-4 hidden">
                   <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-blue-200 dark:text-blue-900">Python</span>
                   <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-red-200 dark:text-red-900">Matching Models</span>
                   <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-green-200 dark:text-green-900">LLMs</span>
                   <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-yellow-200 dark:text-yellow-900">GPT-4o mini</span>
                   <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-purple-200 dark:text-purple-900">Azure Document Intelligence</span>
                 </div>
-                <div class="mt-6 flex justify-end gap-4">
+                <div class="mt-6 flex justify-end gap-4 hidden">
                   <!-- <a href="#" class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">Ver Código</a> -->
                 </div>
               </div>
@@ -351,18 +356,18 @@
                     <br>
                     La solución genera archivos estructurados en JSON que facilitan la integración con los sistemas de originación de crédito del banco, asegurando trazabilidad y cumplimiento normativo.
                   </p>
-                  <button id="toggle-btn-10" onclick="toggleDescription(10)" class="text-blue-600 dark:text-blue-400 hover:underline text-sm mt-2 hidden">
+                  <button id="toggle-btn-10" onclick="openProjectModal(10)" class="text-blue-600 dark:text-blue-400 hover:underline text-sm mt-2 hidden">
                     Ver más
                   </button>
                 </div>
-                <div class="flex flex-wrap gap-2 mb-4">
+                <div class="flex flex-wrap gap-2 mb-4 hidden">
                   <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-blue-200 dark:text-blue-900">Python</span>
                   <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-red-200 dark:text-red-900">LLMs</span>
                   <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-green-200 dark:text-green-900">Azure OpenAI</span>
                   <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-yellow-200 dark:text-yellow-900">GPT-4o mini</span>
                   <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-purple-200 dark:text-purple-900">Azure Document Intelligence</span>
                 </div>
-                <div class="mt-6 flex justify-end gap-4">
+                <div class="mt-6 flex justify-end gap-4 hidden">
                   <!-- <a href="#" class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">Ver Código</a> -->
                 </div>
               </div>
@@ -386,18 +391,18 @@
                     <br>
                     El objetivo principal es optimizar el desarrollo de frontends entregando interfaces funcionales, escalables y listas para personalizar según las necesidades del proyecto.
                   </p>
-                  <button id="toggle-btn-11" onclick="toggleDescription(11)" class="text-blue-600 dark:text-blue-400 hover:underline text-sm mt-2 hidden">
+                  <button id="toggle-btn-11" onclick="openProjectModal(11)" class="text-blue-600 dark:text-blue-400 hover:underline text-sm mt-2 hidden">
                     Ver más
                   </button>
                 </div>
-                <div class="flex flex-wrap gap-2 mb-4">
+                <div class="flex flex-wrap gap-2 mb-4 hidden">
                   <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-blue-200 dark:text-blue-900">Python</span>
                   <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-red-200 dark:text-red-900">LLMs</span>
                   <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-green-200 dark:text-green-900">Claude 3.5 Sonnet</span>
                   <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-yellow-200 dark:text-yellow-900">Docker</span>
                   <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-purple-200 dark:text-purple-900">CrewAI</span>
                 </div>
-                <div class="mt-6 flex justify-end gap-4">
+                <div class="mt-6 flex justify-end gap-4 hidden">
                   <!-- <a href="#" class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">Ver Código</a> -->
                 </div>
               </div>
@@ -418,18 +423,18 @@
                     <br>
                     El resultado es una aplicación lista para pruebas funcionales, con conexiones seguras a servicios externos, endpoints documentados y un diseño modular que permite extender el sistema de manera ágil.
                   </p>
-                  <button id="toggle-btn-12" onclick="toggleDescription(12)" class="text-blue-600 dark:text-blue-400 hover:underline text-sm mt-2 hidden">
+                  <button id="toggle-btn-12" onclick="openProjectModal(12)" class="text-blue-600 dark:text-blue-400 hover:underline text-sm mt-2 hidden">
                     Ver más
                   </button>
                 </div>
-                <div class="flex flex-wrap gap-2 mb-4">
+                <div class="flex flex-wrap gap-2 mb-4 hidden">
                   <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-blue-200 dark:text-blue-900">Python</span>
                   <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-red-200 dark:text-red-900">Agentes</span>
                   <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-green-200 dark:text-green-900">Claude 3.5 Sonnet</span>
                   <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-yellow-200 dark:text-yellow-900">Docker</span>
                   <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-purple-200 dark:text-purple-900">CrewAI</span>
                 </div>
-                <div class="mt-6 flex justify-end gap-4">
+                <div class="mt-6 flex justify-end gap-4 hidden">
                   <!-- <a href="#" class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">Ver Código</a> -->
                 </div>
               </div>
@@ -441,6 +446,20 @@
         </div>
       </section>
     </main>
+
+    <!-- Modal de Proyecto -->
+    <div id="project-modal" class="hidden fixed inset-0 bg-black bg-opacity-70 z-50 flex justify-center items-center p-4 transition-opacity duration-300">
+      <div id="modal-container" class="bg-white dark:bg-gray-800 rounded-lg shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto transform scale-95 transition-transform duration-300">
+        <div class="p-6 md:p-8 relative">
+          <button id="close-modal-btn" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-white z-10">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+          </button>
+          <div id="modal-content-wrapper">
+            <!-- El contenido del proyecto se inyectará aquí -->
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="bg-gray-800 dark:bg-black text-white text-center py-6">
       <p>&copy; 2025 Eduardo Aguilar. Todos los derechos reservados.</p>
@@ -459,19 +478,6 @@
 </style>
 
 <script>
-function toggleDescription(projectId) {
-  const description = document.getElementById(`description-${projectId}`);
-  const toggleBtn = document.getElementById(`toggle-btn-${projectId}`);
-  
-  if (description.classList.contains('line-clamp-3')) {
-    description.classList.remove('line-clamp-3');
-    toggleBtn.textContent = 'Ver menos';
-  } else {
-    description.classList.add('line-clamp-3');
-    toggleBtn.textContent = 'Ver más';
-  }
-}
-
 document.addEventListener('DOMContentLoaded', function() {
   const descriptions = document.querySelectorAll('[id^="description-"]');
   
@@ -483,5 +489,89 @@ document.addEventListener('DOMContentLoaded', function() {
       toggleBtn.classList.remove('hidden');
     }
   });
+
+  // Lógica del Modal
+  const modal = document.getElementById('project-modal');
+  const modalContainer = document.getElementById('modal-container');
+  const closeModalBtn = document.getElementById('close-modal-btn');
+
+  closeModalBtn.addEventListener('click', closeProjectModal);
+  modal.addEventListener('click', function(event) {
+    if (event.target === modal) {
+      closeProjectModal();
+    }
+  });
 });
+
+function openProjectModal(projectId) {
+  const card = document.getElementById(`toggle-btn-${projectId}`).closest('.p-6');
+  const image = card.previousElementSibling;
+  const videoContainer = document.getElementById(`video-container-${projectId}`);
+
+  const title = card.querySelector('h3').textContent;
+  const description = document.getElementById(`description-${projectId}`).innerHTML;
+  const technologies = card.querySelector('.flex.flex-wrap.gap-2').outerHTML;
+  const links = card.querySelector('.flex.justify-end.gap-4').outerHTML;
+  
+  // Quitar la clase 'hidden' para que se muestren en el modal
+  const cleanTechnologies = technologies.replace(' hidden', '');
+  const cleanLinks = links.replace(' hidden', '');
+  
+  let mediaContent = `
+    <div class="aspect-video w-full bg-gray-700 dark:bg-gray-800  rounded-lg overflow-hidden flex justify-center items-center">
+      <img src="${image.src}" alt="${image.alt}" class="max-w-full max-h-full object-contain">
+    </div>
+  `;
+
+  if (videoContainer && videoContainer.dataset.videoSrc) {
+    mediaContent = `
+      <div class="aspect-video w-full bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
+        <video class="w-full h-full" controls autoplay>
+          <source src="${videoContainer.dataset.videoSrc}" type="video/mp4">
+          Tu navegador no soporta el tag de video.
+        </video>
+      </div>
+    `;
+  }
+
+  const modalContentWrapper = document.getElementById('modal-content-wrapper');
+  modalContentWrapper.innerHTML = `
+    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-6">${title}</h2>
+    <div>
+      <h3 class="text-2xl font-bold mb-3 text-gray-900 dark:text-white">Descripción</h3>
+      <div class="prose prose-lg dark:prose-invert max-w-none text-gray-600 dark:text-gray-300">${description}</div>
+      
+      <div class="mt-3">
+        ${mediaContent}
+      </div>
+
+      <h3 class="text-2xl font-bold mt-3 mb-4 text-gray-900 dark:text-white">Tecnologías</h3>
+      ${cleanTechnologies}
+
+      <div class="mt-3 text-center">${cleanLinks.replace('flex justify-end', 'inline-flex')}</div>
+    </div>
+  `;
+
+  const modal = document.getElementById('project-modal');
+  const modalContainer = document.getElementById('modal-container');
+  modal.classList.remove('hidden');
+  setTimeout(() => {
+    modal.classList.add('opacity-100');
+    modalContainer.classList.add('scale-100');
+  }, 10); // Pequeño delay para que la transición CSS se active
+
+  document.body.style.overflow = 'hidden'; // Bloquear scroll del body
+}
+
+function closeProjectModal() {
+  const modal = document.getElementById('project-modal');
+  modal.classList.remove('opacity-100');
+  document.getElementById('modal-container').classList.remove('scale-100');
+  
+  setTimeout(() => {
+    modal.classList.add('hidden');
+    document.getElementById('modal-content-wrapper').innerHTML = ''; // Limpiar contenido
+  }, 300); // Coincide con la duración de la transición
+  document.body.style.overflow = ''; // Restaurar scroll del body
+}
 </script>
