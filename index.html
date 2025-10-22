@@ -199,7 +199,7 @@
                   </p>
                   <div id="video-container-5" class="hidden aspect-video w-full bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden shadow-2xl mt-4" data-video-src="https://github.com/EduardoAguilar92/Portfolio/raw/main/gsmarena.mp4">
                     <video class="w-full h-full" controls>
-                      <source src="https://github.com/EduardoAguilar92/Portfolio/raw/main/gsmarena.mp4" type="video/mp4">
+                      <source src="https://github.com/EduardoAguilar92/Portfolio/raw/main/GSMArenaScraper.mp4" type="video/mp4">
                       Tu navegador no soporta el tag de video.
                     </video>
                   </div>
@@ -523,21 +523,26 @@ function openProjectModal(projectId) {
   const cleanTechnologies = technologies.replace(' hidden', '');
   const cleanLinks = links.replace(' hidden', '');
   
-  let mediaContent = `
-    <div class="aspect-video w-full bg-gray-700 dark:bg-gray-800  rounded-lg overflow-hidden flex justify-center items-center">
-      <img src="${image.src}" alt="${image.alt}" class="max-w-full max-h-full object-contain">
-    </div>
-  `;
+  const projectsWithMedia = [1, 2, 5, 8];
+  let mediaContent = '';
 
-  if (videoContainer && videoContainer.dataset.videoSrc) {
-    mediaContent = `
-      <div class="aspect-video w-full bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
-        <video class="w-full h-full" controls autoplay>
-          <source src="${videoContainer.dataset.videoSrc}" type="video/mp4">
-          Tu navegador no soporta el tag de video.
-        </video>
+  if (projectsWithMedia.includes(projectId)) {
+    if (videoContainer && videoContainer.dataset.videoSrc) {
+      mediaContent = `
+        <div class="aspect-video w-full bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
+          <video class="w-full h-full" controls autoplay>
+            <source src="${videoContainer.dataset.videoSrc}" type="video/mp4">
+            Tu navegador no soporta el tag de video.
+          </video>
+        </div>
+      `;
+    } else {
+      mediaContent = `
+      <div class="aspect-video w-full bg-gray-700 dark:bg-gray-800  rounded-lg overflow-hidden flex justify-center items-center">
+        <img src="${image.src}" alt="${image.alt}" class="max-w-full max-h-full object-contain">
       </div>
-    `;
+      `;
+    }
   }
 
   const modalContentWrapper = document.getElementById('modal-content-wrapper');
@@ -547,7 +552,7 @@ function openProjectModal(projectId) {
       <h3 class="text-2xl font-bold mb-3 text-gray-900 dark:text-white">Descripción</h3>
       <div class="prose prose-lg dark:prose-invert max-w-none text-gray-600 dark:text-gray-300">${description}</div>
       
-      <div class="mt-3">
+      <div class="mt-3 ${mediaContent ? '' : 'hidden'}">
         ${mediaContent}
       </div>
 
